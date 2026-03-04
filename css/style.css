@@ -43,6 +43,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+    width: 100%;
 }
 
 /* Typography */
@@ -59,6 +60,7 @@ h2 {
 h3 {
     font-size: 1.3rem;
     color: var(--text-dark);
+    word-wrap: break-word;
 }
 
 p {
@@ -105,6 +107,9 @@ a:hover {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .logo-icon {
@@ -155,6 +160,7 @@ a:hover {
     padding: 100px 20px;
     position: relative;
     overflow: hidden;
+    min-height: auto;
 }
 
 .hero::before {
@@ -846,8 +852,40 @@ section {
 }
 
 @media (max-width: 768px) {
+    /* Typography */
     h2 {
         font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    /* Navigation */
+    .navbar .container {
+        padding: 0.75rem 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.1rem;
+    }
+
+    .logo-icon {
+        font-size: 1.2rem;
+    }
+
+    .nav-links {
+        gap: 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 60px 20px;
     }
 
     .hero-title {
@@ -858,24 +896,59 @@ section {
         font-size: 1.3rem;
     }
 
+    .hero-tagline {
+        font-size: 1rem;
+    }
+
     .hero-stats {
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
+        margin: 2rem 0;
+    }
+
+    .stat {
+        padding: 1.2rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
     }
 
     .hero-cta {
         flex-direction: column;
+        gap: 0.8rem;
     }
 
+    .cta-button {
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-contact {
+        font-size: 0.9rem;
+        gap: 0.6rem;
+    }
+
+    /* Sections */
     section {
         padding: 60px 20px;
     }
 
-    .nav-links {
-        gap: 1.5rem;
-        font-size: 0.85rem;
+    .section-header {
+        margin-bottom: 2.5rem;
     }
 
+    .section-header h2 {
+        margin-bottom: 0.8rem;
+    }
+
+    /* Timeline */
     .timeline-item {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -883,84 +956,786 @@ section {
 
     .timeline-marker {
         top: 0;
+        left: 5px;
     }
 
     .timeline-item:not(:last-child)::after {
         display: none;
     }
 
+    .timeline-content {
+        padding: 1.5rem;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .date {
+        font-size: 0.85rem;
+    }
+
+    /* About */
     .about-highlights {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin-top: 2rem;
     }
 
+    .highlight {
+        padding: 1.5rem;
+    }
+
+    .highlight h3 {
+        font-size: 1rem;
+    }
+
+    /* Contact Grid */
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
     }
 
+    .contact-method {
+        padding: 1.5rem;
+    }
+
+    .contact-icon {
+        font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contact-method h3 {
+        font-size: 0.95rem;
+    }
+
+    .contact-method a {
+        font-size: 0.9rem;
+    }
+
+    /* Cards */
     .expertise-card,
     .skill-card {
         padding: 1.5rem;
     }
 
+    .expertise-icon {
+        font-size: 2rem;
+    }
+
+    .expertise-card h3,
+    .skill-card h3 {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
     .expertise-list li,
     .experience-list li {
         font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    h2 {
-        font-size: 1.5rem;
+        padding: 0.5rem 0;
+        padding-left: 1.2rem;
     }
 
-    .hero-title {
-        font-size: 1.8rem;
+    .tag {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 
-    .hero-subtitle {
+    /* Certifications */
+    .cert-icon {
+        font-size: 2.5rem;
+    }
+
+    .cert-card {
+        padding: 1.5rem;
+    }
+
+    .cert-card h3 {
         font-size: 1rem;
     }
 
+    .cert-name,
+    .cert-org {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 20px;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .footer-made {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Typography */
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
+    }
+
+    /* Navigation */
+    .navbar .container {
+        padding: 0.65rem 12px;
+        gap: 0.5rem;
+    }
+
+    .navbar-brand {
+        font-size: 1rem;
+        gap: 0.3rem;
+    }
+
+    .logo-icon {
+        font-size: 1.1rem;
+    }
+
+    .nav-links {
+        gap: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    .nav-links a {
+        font-size: 0.7rem;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
     .hero-tagline {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
     }
 
     .hero-stats {
         grid-template-columns: 1fr;
+        gap: 0.8rem;
+        margin: 1.5rem 0;
     }
 
     .stat {
         padding: 1rem;
+        border-radius: 8px;
     }
 
     .stat-number {
         font-size: 1.5rem;
     }
 
-    .nav-links {
-        gap: 0.75rem;
-        font-size: 0.75rem;
+    .stat-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.5px;
     }
 
-    .skills-grid,
-    .expertise-grid {
-        grid-template-columns: 1fr;
+    .hero-cta {
+        gap: 0.6rem;
+        margin: 1.5rem 0;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .cta-button {
+        padding: 11px 22px;
+        font-size: 0.88rem;
+    }
+
+    .hero-contact {
+        font-size: 0.85rem;
+        gap: 0.5rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 45px 15px;
     }
 
     .section-header {
         margin-bottom: 2rem;
     }
 
-    section {
-        padding: 40px 15px;
+    .header-line {
+        width: 60px;
+    }
+
+    /* Timeline */
+    .timeline {
+        max-width: 100%;
+    }
+
+    .timeline-item {
+        margin-bottom: 2rem;
+    }
+
+    .timeline-marker {
+        width: 16px;
+        height: 16px;
+        left: 3px;
+    }
+
+    .timeline-content {
+        padding: 1.2rem;
+        border-radius: 8px;
+        border-left: 3px solid var(--primary-blue);
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .title-group h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .company {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .date {
+        font-size: 0.75rem;
+    }
+
+    .experience-list li {
+        font-size: 0.85rem;
+        padding: 0.4rem 0;
+        padding-left: 1rem;
+    }
+
+    .experience-list li::before {
+        font-size: 1rem;
+    }
+
+    /* About */
+    .about-highlights {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .highlight {
+        padding: 1.2rem;
+    }
+
+    .highlight h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .highlight p {
+        font-size: 0.85rem;
+    }
+
+    /* Grid Layouts */
+    .expertise-grid,
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .expertise-card,
+    .skill-card {
+        padding: 1.2rem;
+        border-radius: 8px;
+    }
+
+    .expertise-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .expertise-card h3,
+    .skill-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .skill-tags {
+        gap: 0.5rem;
+    }
+
+    .tag {
+        padding: 0.35rem 0.7rem;
+        font-size: 0.75rem;
+        border-radius: 16px;
+    }
+
+    .expertise-list li {
+        font-size: 0.85rem;
+        padding-left: 1rem;
+    }
+
+    .expertise-list li::before {
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 50px 15px;
+    }
+
+    .contact-subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-method {
+        padding: 1.2rem;
+        border-radius: 8px;
+    }
+
+    .contact-icon {
+        font-size: 1.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .contact-method h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-method a {
+        font-size: 0.85rem;
+        word-break: break-word;
+    }
+
+    .cta-button.large {
+        padding: 11px 24px;
+        font-size: 0.88rem;
+        width: 100%;
+    }
+
+    /* Certifications */
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .cert-card {
+        padding: 1.2rem;
+        border-radius: 8px;
+    }
+
+    .cert-icon {
+        font-size: 2.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .cert-card h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .cert-name {
+        font-size: 0.8rem;
+    }
+
+    .cert-org {
+        font-size: 0.75rem;
+    }
+
+    .cert-year {
+        font-size: 0.75rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 1.5rem 15px;
+    }
+
+    .footer-text {
+        font-size: 0.85rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.75rem;
+    }
+
+    .footer-made {
+        font-size: 0.7rem;
+        margin-top: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Typography */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 0.95rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .navbar .container {
+        padding: 0.6rem 12px;
+        gap: 0.3rem;
+    }
+
+    .navbar-brand {
+        font-size: 0.95rem;
+    }
+
+    .logo-icon {
+        font-size: 1rem;
+    }
+
+    .nav-links {
+        gap: 0.6rem;
+        font-size: 0.65rem;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 40px 12px;
+        min-height: auto;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .hero-tagline {
+        font-size: 0.85rem;
+        margin-bottom: 1.2rem;
+        line-height: 1.5;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 0.7rem;
+        margin: 1.2rem 0;
+    }
+
+    .stat {
+        padding: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+        letter-spacing: 0.3px;
+        margin-top: 0.15rem;
+    }
+
+    .hero-cta {
+        gap: 0.5rem;
+        margin: 1.2rem 0;
     }
 
     .cta-button {
-        padding: 12px 24px;
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        width: 100%;
+        border-radius: 6px;
+    }
+
+    .hero-contact {
+        font-size: 0.8rem;
+        gap: 0.4rem;
+    }
+
+    .contact-item {
+        gap: 0.3rem;
+    }
+
+    /* Sections */
+    section {
+        padding: 35px 12px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .section-header h2 {
+        margin-bottom: 0.6rem;
+        font-size: 1.4rem;
+    }
+
+    .header-line {
+        width: 50px;
+        height: 3px;
+    }
+
+    /* About */
+    .about-content p {
         font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-highlights {
+        gap: 0.8rem;
+        margin-top: 1.2rem;
+    }
+
+    .highlight {
+        padding: 1rem;
+        border-radius: 6px;
+        border-left: 3px solid var(--accent-blue);
+    }
+
+    .highlight h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .highlight p {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        margin-bottom: 1.8rem;
+    }
+
+    .timeline-marker {
+        width: 14px;
+        height: 14px;
+        left: 2px;
+    }
+
+    .timeline-content {
+        padding: 1rem;
+        border-left: 2px solid var(--primary-blue);
+    }
+
+    .title-group h3 {
+        font-size: 0.9rem;
+    }
+
+    .company {
+        font-size: 0.75rem;
+    }
+
+    .date {
+        font-size: 0.7rem;
+    }
+
+    .experience-list li {
+        font-size: 0.8rem;
+        padding: 0.35rem 0;
+        padding-left: 0.9rem;
+    }
+
+    .experience-list li::before {
+        font-size: 0.9rem;
+    }
+
+    /* Grid */
+    .expertise-grid,
+    .skills-grid,
+    .cert-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .expertise-card,
+    .skill-card,
+    .cert-card {
+        padding: 1rem;
+        border-radius: 6px;
+    }
+
+    .expertise-icon {
+        font-size: 1.6rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .expertise-card h3,
+    .skill-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .skill-tags {
+        gap: 0.4rem;
+    }
+
+    .tag {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+
+    .expertise-list li {
+        font-size: 0.8rem;
+        padding-left: 0.9rem;
+    }
+
+    /* Certifications */
+    .cert-icon {
+        font-size: 2rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .cert-card h3 {
+        font-size: 0.9rem;
+        margin-bottom: 0.2rem;
+    }
+
+    .cert-name {
+        font-size: 0.75rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .cert-org {
+        font-size: 0.7rem;
+        margin-bottom: 0.15rem;
+    }
+
+    .cert-year {
+        font-size: 0.7rem;
+    }
+
+    /* Contact */
+    .contact {
+        padding: 40px 12px;
+    }
+
+    .contact-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-method {
+        padding: 1rem;
+        border-radius: 6px;
+    }
+
+    .contact-icon {
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-method h3 {
+        font-size: 0.85rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .contact-method a {
+        font-size: 0.8rem;
+    }
+
+    .cta-button.large {
+        padding: 10px 20px;
+        font-size: 0.85rem;
+        width: 100%;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 1.2rem 12px;
+    }
+
+    .footer-text {
+        font-size: 0.8rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .footer-subtitle {
+        font-size: 0.7rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .footer-made {
+        font-size: 0.65rem;
+        margin-top: 0.6rem;
+    }
+}
+
+@media (max-width: 360px) {
+    /* Very small screens */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .nav-links {
+        gap: 0.4rem;
+        font-size: 0.6rem;
+    }
+
+    .cta-button {
+        padding: 9px 16px;
+        font-size: 0.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.6rem;
+    }
+
+    .section-header h2 {
+        font-size: 1.3rem;
     }
 }
