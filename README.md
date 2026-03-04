@@ -160,7 +160,7 @@ Edit CSS variables in `css/style.css`:
 - **Email**: kedar93@gmail.com
 - **Phone**: +1-647-831-8338
 - **Location**: Toronto, ON, Canada
-- **LinkedIn**: linkedin.com/in/kedareswar
+- **LinkedIn**: linkedin.com/in/kedareswar-sharma
 - **GitHub**: github.com/kedareswar
 
 ## 📜 License
