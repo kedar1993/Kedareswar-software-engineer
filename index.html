@@ -11,12 +11,14 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="navbar-brand">Kedareswar Rajagopal Sharma</div>
+            <div class="navbar-brand">
+                <span class="logo-icon">&lt;/&gt;</span> Kedareswar Sharma
+            </div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#expertise">Expertise</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#education">Education</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -25,39 +27,79 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1>Kedareswar Rajagopal Sharma</h1>
-            <p class="title">Senior Java / Spring Boot Technical Lead</p>
-            <p class="subtitle">Architecting Scalable Microservices & Cloud-Native Systems | 10+ Years in Enterprise Insurance</p>
-            <div class="hero-contact">
-                <span>📍 Toronto, ON, Canada</span>
-                <span>📧 kedar93@gmail.com</span>
-                <span>📱 +1-647-831-8338</span>
+            <div class="hero-content">
+                <h1 class="hero-title">Kedareswar Rajagopal Sharma</h1>
+                <p class="hero-subtitle">Senior Java / Spring Boot Technical Lead</p>
+                <p class="hero-tagline">Architecting Enterprise-Scale Systems | Building Cloud-Native Solutions | 10+ Years in FinTech & Insurance</p>
+
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">15+</div>
+                        <div class="stat-label">Microservices</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">1M+</div>
+                        <div class="stat-label">Docs/Month</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label">Uptime</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">60%</div>
+                        <div class="stat-label">Deploy ↓</div>
+                    </div>
+                </div>
+
+                <div class="hero-cta">
+                    <a href="#contact" class="cta-button primary">Let's Connect</a>
+                    <a href="mailto:kedar93@gmail.com" class="cta-button secondary">Email Me</a>
+                </div>
+
+                <div class="hero-contact">
+                    <span class="contact-item">📍 Toronto, ON</span>
+                    <span class="contact-item">📱 +1-647-831-8338</span>
+                    <span class="contact-item">💼 linkedin.com/in/kedareswar-sharma</span>
+                </div>
             </div>
-            <a href="#contact" class="cta-button">Get In Touch</a>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <pre><code>// Building Enterprise Solutions
+const architect = {
+  specialization: "Microservices",
+  expertise: ["AWS", "Spring Boot", "Distributed Systems"],
+  impact: "Processing 1M+ documents/month"
+};</code></pre>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2>Professional Summary</h2>
-            <p>Senior Java / Spring Boot Technical Lead with 10+ years of experience architecting and delivering high-volume, compliance-driven systems in the insurance domain. Proven expertise in designing scalable microservices and distributed workflows on AWS (ECS, RDS, Lambda, Step Functions, API Gateway). Experienced in modernizing legacy SOAP platforms into secure, cloud-native REST APIs supporting real-time document processing, regulatory compliance, and high-availability workloads. Strong ownership of system design, performance optimization, and cloud cost governance in regulated enterprise environments.</p>
-            <div class="highlights">
-                <div class="highlight-item">
-                    <strong>15+</strong>
-                    <span>Cloud-Native Microservices</span>
-                </div>
-                <div class="highlight-item">
-                    <strong>1M+</strong>
-                    <span>Documents/Month</span>
-                </div>
-                <div class="highlight-item">
-                    <strong>99.9%</strong>
-                    <span>Availability</span>
-                </div>
-                <div class="highlight-item">
-                    <strong>60%</strong>
-                    <span>Faster Deployments</span>
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-content">
+                <p>I'm a Senior Technical Lead with a passion for architecting scalable, resilient systems that solve complex enterprise challenges. With 10+ years of experience in the insurance and financial technology sectors, I've led the design and delivery of mission-critical platforms handling millions of transactions daily.</p>
+
+                <p>My expertise spans full-stack architecture, from cloud infrastructure design to microservices orchestration, API security, and high-availability systems. I'm committed to writing clean, maintainable code and mentoring high-performing engineering teams.</p>
+
+                <div class="about-highlights">
+                    <div class="highlight">
+                        <h3>🎯 Current Focus</h3>
+                        <p>Cloud-native architecture, microservices design patterns, and distributed systems at scale</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>💡 Passion</h3>
+                        <p>Building systems that are reliable, secure, and performant under extreme load</p>
+                    </div>
+                    <div class="highlight">
+                        <h3>🚀 Goal</h3>
+                        <p>Driving technical excellence and innovation in enterprise software engineering</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -66,85 +108,110 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2>Professional Experience</h2>
+            <div class="section-header">
+                <h2>Professional Experience</h2>
+                <div class="header-line"></div>
+            </div>
             <div class="timeline">
                 <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div class="title-group">
-                            <h3>Java Technical Lead</h3>
-                            <p class="company">AVIVA CANADA INC - TCS CONTRACT</p>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="title-group">
+                                <h3>Java Technical Lead</h3>
+                                <p class="company">AVIVA CANADA INC (TCS Contract)</p>
+                            </div>
+                            <div class="date">Oct 2021 – Present</div>
                         </div>
-                        <div class="date">Oct 2021 – Present</div>
+                        <p class="location">📍 Toronto, ON</p>
+                        <ul class="experience-list">
+                            <li>Architected and led 15+ cloud-native Spring Boot microservices on AWS ECS, handling 1M+ insurance documents monthly with 99.9% availability</li>
+                            <li>Designed end-to-end document orchestration platform using AWS Lambda, Step Functions, and SQS for policy automation workflows</li>
+                            <li>Modernized legacy SOAP services into RESTful microservices, reducing latency by 30-40% and improving system maintainability</li>
+                            <li>Implemented event-driven architecture patterns for asynchronous processing of high-volume document streams</li>
+                            <li>Integrated secure APIs with third-party systems: DocuSign, CSIO eDocs, Symcor with OAuth2/mutual TLS authentication</li>
+                            <li>Reduced deployment time by 60% through Docker-based CI/CD pipelines via Jenkins and AWS CodePipeline</li>
+                            <li>Established centralized monitoring with AppDynamics and CloudWatch, reducing MTTR by 35%</li>
+                            <li>Led Agile Scrum team of 6-8 engineers, conducted architectural reviews, code mentoring, and on-call incident response</li>
+                        </ul>
                     </div>
-                    <p class="location">Toronto, ON</p>
-                    <ul class="experience-list">
-                        <li>Architected and led the design of 15+ cloud-native Spring Boot microservices deployed on AWS ECS, processing over 1M+ insurance documents per month with 99.9% availability.</li>
-                        <li>Owned end-to-end system architecture for a real-time document orchestration platform leveraging AWS Lambda, Step Functions, and Batch to automate policy, claims, and compliance workflows.</li>
-                        <li>Modernized legacy SOAP-based services into RESTful APIs, reducing response latency by 30–40% and improving maintainability across insurance systems.</li>
-                        <li>Designed asynchronous processing pipelines using event-driven patterns to enable scalable high-volume document ingestion.</li>
-                        <li>Implemented secure API integrations with third-party systems (DocuSign, CSIO eDocs, Symcor) ensuring regulatory compliance.</li>
-                        <li>Reduced deployment time by 60% by implementing Docker-based CI/CD pipelines via Jenkins integrated with AWS.</li>
-                        <li>Established centralized logging and monitoring using AppDynamics and CloudWatch, reducing incident resolution time by 35%.</li>
-                        <li>Led Agile Scrum team of 6–8 engineers, conducting architectural reviews and mentoring developers.</li>
-                    </ul>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-header">
-                        <div class="title-group">
-                            <h3>Java Developer</h3>
-                            <p class="company">TATA CONSULTANCY SERVICES</p>
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="title-group">
+                                <h3>Senior Java Developer</h3>
+                                <p class="company">TATA CONSULTANCY SERVICES</p>
+                            </div>
+                            <div class="date">May 2015 – Oct 2021 (6+ years)</div>
                         </div>
-                        <div class="date">May 2015 – Oct 2021</div>
+                        <p class="location">📍 Bangalore, India</p>
+                        <ul class="experience-list">
+                            <li>Led modernization of legacy insurance document systems into Spring Boot REST microservices, improving performance by 35%</li>
+                            <li>Developed enterprise-grade integrations with Guidewire ClaimCenter, FileNet, and OpenText document management systems</li>
+                            <li>Designed reusable enterprise components: DocuSign integration, document reprint services, and workflow orchestration modules</li>
+                            <li>Optimized Oracle and MS-SQL database queries using JPA, improving batch throughput by 25% and reducing lock contention</li>
+                            <li>Performed root cause analysis and performance tuning for high-traffic workflows supporting 10K+ daily transactions</li>
+                            <li>Mentored junior developers on Spring ecosystem, REST API design, and microservices patterns</li>
+                        </ul>
                     </div>
-                    <p class="location">Bangalore, India</p>
-                    <ul class="experience-list">
-                        <li>Led modernization of legacy insurance document systems into Spring Boot REST microservices, improving system performance by 35%.</li>
-                        <li>Developed enterprise-grade integrations with Guidewire ClaimCenter and document management systems (FileNet, OpenText).</li>
-                        <li>Designed reusable enterprise components including reprint services and DocuSign integration modules.</li>
-                        <li>Optimized Oracle and MS-SQL database interactions using JPA and query tuning, improving batch throughput by 25%.</li>
-                        <li>Performed root cause analysis and performance tuning for high-traffic document workflows supporting thousands of daily transactions.</li>
-                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Architecture & Systems Expertise -->
-    <section class="architecture">
+    <!-- Expertise Section -->
+    <section id="expertise" class="expertise">
         <div class="container">
-            <h2>Architecture & Systems Expertise</h2>
+            <div class="section-header">
+                <h2>Architecture & System Design</h2>
+                <div class="header-line"></div>
+            </div>
             <div class="expertise-grid">
                 <div class="expertise-card">
-                    <h3>🏗️ System Design</h3>
-                    <ul>
-                        <li>Microservices & Distributed Systems Design</li>
+                    <div class="expertise-icon">🏗️</div>
+                    <h3>System Architecture</h3>
+                    <ul class="expertise-list">
+                        <li>Microservices & Distributed Systems</li>
                         <li>Event-Driven Architecture</li>
-                        <li>High-Availability & Fault-Tolerant Systems</li>
+                        <li>Domain-Driven Design (DDD)</li>
+                        <li>CQRS Pattern Implementation</li>
+                        <li>Saga Pattern for Transactions</li>
                     </ul>
                 </div>
                 <div class="expertise-card">
-                    <h3>☁️ Cloud & DevOps</h3>
-                    <ul>
-                        <li>Cloud-Native AWS Deployments</li>
-                        <li>CI/CD & DevOps Automation</li>
-                        <li>Container Orchestration</li>
+                    <div class="expertise-icon">☁️</div>
+                    <h3>Cloud & Infrastructure</h3>
+                    <ul class="expertise-list">
+                        <li>AWS ECS / Fargate Orchestration</li>
+                        <li>Lambda Serverless Functions</li>
+                        <li>RDS & DynamoDB Optimization</li>
+                        <li>Docker & Container Management</li>
+                        <li>Infrastructure as Code (Terraform)</li>
                     </ul>
                 </div>
                 <div class="expertise-card">
-                    <h3>🔒 Security & Compliance</h3>
-                    <ul>
-                        <li>API Security & Authentication</li>
-                        <li>Regulatory Compliance Workflows</li>
-                        <li>Enterprise System Integration</li>
+                    <div class="expertise-icon">🔒</div>
+                    <h3>Security & Compliance</h3>
+                    <ul class="expertise-list">
+                        <li>OAuth2 & JWT Authentication</li>
+                        <li>Mutual TLS/mTLS Implementation</li>
+                        <li>API Gateway Security</li>
+                        <li>Data Encryption at Rest & Transit</li>
+                        <li>Regulatory Compliance (SOX, HIPAA)</li>
                     </ul>
                 </div>
                 <div class="expertise-card">
-                    <h3>⚡ Performance</h3>
-                    <ul>
-                        <li>Performance Engineering & Optimization</li>
-                        <li>Database Query Tuning</li>
-                        <li>System Scalability</li>
+                    <div class="expertise-icon">⚡</div>
+                    <h3>Performance & Reliability</h3>
+                    <ul class="expertise-list">
+                        <li>Performance Profiling & Tuning</li>
+                        <li>Database Query Optimization</li>
+                        <li>Load Balancing & Scaling</li>
+                        <li>Monitoring & Observability</li>
+                        <li>Disaster Recovery Planning</li>
                     </ul>
                 </div>
             </div>
@@ -154,89 +221,107 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2>Technical Skills</h2>
+            <div class="section-header">
+                <h2>Technical Stack</h2>
+                <div class="header-line"></div>
+            </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <h3>Frameworks & Platforms</h3>
-                    <ul>
-                        <li>Spring Boot</li>
-                        <li>Spring MVC</li>
-                        <li>Spring Security</li>
-                        <li>Hibernate</li>
-                        <li>JPA</li>
-                    </ul>
+                    <h3>📚 Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Spring Boot</span>
+                        <span class="tag">Spring MVC</span>
+                        <span class="tag">Spring Security</span>
+                        <span class="tag">Spring Cloud</span>
+                        <span class="tag">Hibernate</span>
+                        <span class="tag">JPA</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Cloud & DevOps</h3>
-                    <ul>
-                        <li>AWS ECS / RDS</li>
-                        <li>AWS Lambda / Step Functions</li>
-                        <li>API Gateway / S3</li>
-                        <li>Docker</li>
-                        <li>Jenkins</li>
-                    </ul>
+                    <h3>☁️ Cloud & DevOps</h3>
+                    <div class="skill-tags">
+                        <span class="tag">AWS ECS</span>
+                        <span class="tag">AWS Lambda</span>
+                        <span class="tag">RDS</span>
+                        <span class="tag">S3</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Jenkins</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Languages</h3>
-                    <ul>
-                        <li>Java (JDK 8–21)</li>
-                        <li>SQL</li>
-                        <li>Python (basic)</li>
-                        <li>Shell Script</li>
-                    </ul>
+                    <h3>💻 Languages</h3>
+                    <div class="skill-tags">
+                        <span class="tag">Java (8-21)</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Bash/Shell</span>
+                        <span class="tag">HTML/CSS</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Databases</h3>
-                    <ul>
-                        <li>PostgreSQL</li>
-                        <li>Oracle</li>
-                        <li>MS-SQL</li>
-                        <li>NoSQL</li>
-                    </ul>
+                    <h3>🗄️ Databases & Caching</h3>
+                    <div class="skill-tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Oracle</span>
+                        <span class="tag">MS-SQL</span>
+                        <span class="tag">DynamoDB</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Elasticsearch</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Web Services</h3>
-                    <ul>
-                        <li>RESTful APIs</li>
-                        <li>SOAP</li>
-                        <li>JSON/XML</li>
-                        <li>Microservices</li>
-                    </ul>
+                    <h3>🔌 APIs & Protocols</h3>
+                    <div class="skill-tags">
+                        <span class="tag">REST</span>
+                        <span class="tag">SOAP</span>
+                        <span class="tag">gRPC</span>
+                        <span class="tag">JSON/XML</span>
+                        <span class="tag">OAuth2</span>
+                        <span class="tag">JWT</span>
+                    </div>
                 </div>
                 <div class="skill-card">
-                    <h3>Tools & Monitoring</h3>
-                    <ul>
-                        <li>IntelliJ IDEA / Eclipse</li>
-                        <li>Git / Maven</li>
-                        <li>AppDynamics / Dynatrace</li>
-                        <li>CloudWatch / Log4j</li>
-                    </ul>
+                    <h3>🛠️ Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="tag">IntelliJ IDEA</span>
+                        <span class="tag">Git</span>
+                        <span class="tag">Maven</span>
+                        <span class="tag">Gradle</span>
+                        <span class="tag">JIRA</span>
+                        <span class="tag">AppDynamics</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education">
+    <!-- Certifications Section -->
+    <section class="certifications">
         <div class="container">
-            <h2>Education & Certifications</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <h3>📚 Education</h3>
-                    <div class="edu-item">
-                        <h4>Bachelor of Technology in Electrical and Electronics</h4>
-                        <p class="institution">SASTRA University, India</p>
-                        <p class="year">2015</p>
-                    </div>
+            <div class="section-header">
+                <h2>Education & Certifications</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">🎓</div>
+                    <h3>Bachelor of Technology</h3>
+                    <p class="cert-name">Electrical and Electronics</p>
+                    <p class="cert-org">SASTRA University, India</p>
+                    <p class="cert-year">2015</p>
                 </div>
-                <div class="education-card">
-                    <h3>🏆 Certifications</h3>
-                    <div class="edu-item">
-                        <p>Oracle Certified Professional, Java SE 11 Developer</p>
-                    </div>
-                    <div class="edu-item">
-                        <p>Guidewire Certified ClaimCenter Configuration Developer (Hakuba)</p>
-                    </div>
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>Oracle Certified Professional</h3>
+                    <p class="cert-name">Java SE 11 Developer</p>
+                    <p class="cert-org">Oracle Corporation</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">📋</div>
+                    <h3>Guidewire Certified Developer</h3>
+                    <p class="cert-name">ClaimCenter Configuration (Hakuba)</p>
+                    <p class="cert-org">Guidewire Software Inc.</p>
                 </div>
             </div>
         </div>
@@ -245,13 +330,37 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Get In Touch</h2>
-            <p>Open to discussing architecture challenges, cloud solutions, and technical opportunities.</p>
-            <div class="contact-links">
-                <a href="mailto:kedar93@gmail.com" class="contact-link">📧 Email</a>
-                <a href="tel:+16478318338" class="contact-link">📱 Phone</a>
-                <a href="https://www.linkedin.com/in/kedareswar-sharma" class="contact-link" target="_blank">💼 LinkedIn</a>
-                <a href="https://github.com/kedareswar" class="contact-link" target="_blank">🐙 GitHub</a>
+            <div class="section-header white-text">
+                <h2>Let's Build Something Great</h2>
+                <div class="header-line"></div>
+            </div>
+            <p class="contact-subtitle">I'm open to discussing architecture challenges, cloud solutions, and exciting technical opportunities</p>
+
+            <div class="contact-grid">
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email</h3>
+                    <a href="mailto:kedar93@gmail.com">kedar93@gmail.com</a>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <a href="tel:+16478318338">+1 (647) 831-8338</a>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">💼</div>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/kedareswar-sharma" target="_blank">linkedin.com/in/kedareswar-sharma</a>
+                </div>
+                <div class="contact-method">
+                    <div class="contact-icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/kedar1993" target="_blank">github.com/kedar1993</a>
+                </div>
+            </div>
+
+            <div class="contact-cta">
+                <a href="mailto:kedar93@gmail.com" class="cta-button large">Send Me an Email</a>
             </div>
         </div>
     </section>
@@ -259,8 +368,9 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2024 Kedareswar Rajagopal Sharma. All rights reserved.</p>
-            <p class="footer-text">Senior Java Technical Lead | Cloud Architect | Enterprise Systems Expert</p>
+            <p class="footer-text">&copy; 2024 Kedareswar Rajagopal Sharma. All rights reserved.</p>
+            <p class="footer-subtitle">Senior Java Technical Lead | Cloud Architect | Enterprise Systems Expert</p>
+            <p class="footer-made">Built with HTML, CSS & JavaScript</p>
         </div>
     </footer>
 
