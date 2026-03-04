@@ -1,58 +1,50 @@
-# Portfolio & Resume
+# Kedareswar Rajagopal Sharma - Portfolio
 
-A modern, responsive portfolio website built with HTML, CSS, and vanilla JavaScript. Showcase your professional profile, skills, and projects in a clean and professional manner.
+**Senior Java / Spring Boot Technical Lead**
+Toronto, ON, Canada | kedar93@gmail.com | +1-647-831-8338
 
-## Features
+A modern, responsive portfolio website showcasing 10+ years of professional experience in architecting scalable microservices and cloud-native systems in the insurance domain.
 
-- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
-- **Modern UI**: Clean and professional design with smooth animations
-- **Easy to Customize**: Simple structure makes it easy to update with your information
-- **Fast Performance**: Lightweight HTML/CSS/JS with no dependencies
-- **SEO Friendly**: Proper semantic HTML and meta tags
-- **GitHub Hosted**: Perfect for hosting on GitHub Pages
+## 🌟 Features
 
-## Project Structure
+- **Responsive Design**: Optimized for desktop, tablet, and mobile devices
+- **Professional Layout**: Clean, modern design tailored for technical leadership roles
+- **Performance Metrics**: Highlighted key achievements (15+ Microservices, 1M+ Documents/Month, 99.9% Availability)
+- **Experience Timeline**: Beautiful timeline view of professional journey
+- **Technical Skills**: Comprehensive showcase of framework, cloud, and database expertise
+- **Architecture Focus**: Dedicated section for system design and expertise areas
+- **Education & Certifications**: Full academic and professional credentials
+- **GitHub Hosted**: Perfect for GitHub Pages deployment
+
+## 📂 Project Structure
 
 ```
-├── index.html              # Main HTML file
+├── index.html              # Main resume/portfolio page
 ├── css/
-│   └── style.css          # All styles
+│   └── style.css          # Responsive styles with professional color scheme
 ├── js/
 │   └── main.js            # JavaScript functionality
 ├── assets/
-│   └── images/            # Store your project images here
+│   └── images/            # Placeholder for project showcase images
 └── README.md              # This file
 ```
 
-## Getting Started
+## 📄 Content Sections
 
-### 1. Clone the Repository
+1. **Hero Section** - Name, title, location, and call-to-action
+2. **Professional Summary** - Key expertise and achievements at a glance
+3. **Performance Highlights** - Key metrics (15+ Microservices, 1M+ docs/month, etc.)
+4. **Professional Experience** - Timeline of roles at AVIVA CANADA and TCS
+5. **Architecture & Systems Expertise** - Core technical competencies
+6. **Technical Skills** - Organized by category (Frameworks, Cloud, Languages, etc.)
+7. **Education & Certifications** - Degree and professional certifications
+8. **Contact Section** - Email, phone, LinkedIn, GitHub links
 
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-```
+## 🚀 Getting Started
 
-### 2. Customize Your Information
+### 1. View Locally
 
-Edit `index.html` and replace the following:
-- Your name (in navbar and hero section)
-- Your professional title
-- About section content
-- Skills list
-- Project information and links
-- Contact information and links
-
-### 3. Add Your Images
-
-Place your project screenshots in `assets/images/` folder:
-- `project1.png` - First project screenshot
-- `project2.png` - Second project screenshot
-- Add more as needed
-
-### 4. Run Locally (Optional)
-
-You can open the `index.html` file directly in your browser, or use a simple HTTP server:
+Open `index.html` directly in your browser or run a local server:
 
 ```bash
 # Using Python 3
@@ -64,126 +56,119 @@ npx http-server
 # Then visit: http://localhost:8000
 ```
 
-## Deployment to GitHub Pages
+### 2. Deploy to GitHub Pages
 
-### Option 1: Using GitHub Pages (Recommended)
+1. Push code to your GitHub repository
+2. Go to repository **Settings** → **Pages**
+3. Select branch: `main`, folder: `/ (root)`
+4. Click **Save**
+5. Your site will be live at: `https://yourusername.github.io/portfolio`
 
-1. Push your code to GitHub
-2. Go to your repository settings
-3. Navigate to "Pages" section
-4. Select branch: `main` and folder: `/ (root)`
-5. Click "Save"
-6. Your site will be available at: `https://yourusername.github.io/portfolio`
+### 3. Customize
 
-### Option 2: Custom Domain
+All content is in `index.html`. Update:
+- Contact information
+- Experience details
+- Technical skills
+- Education/certifications
+- Social media links (LinkedIn, GitHub)
 
-If you want to use a custom domain:
-1. Add a `CNAME` file with your domain name
-2. Configure DNS settings with your domain provider
-3. Follow GitHub Pages documentation for more details
+### 4. Update Colors (Optional)
 
-## Customization Guide
-
-### Colors
-
-Edit the CSS variables in `css/style.css`:
+Edit CSS variables in `css/style.css`:
 
 ```css
 :root {
-    --primary-color: #0066cc;      /* Change this to your brand color */
-    --secondary-color: #f0f4f8;
-    --text-color: #333;
-    --light-text: #666;
+    --primary-color: #0052a3;       /* Main blue */
+    --accent-color: #00a8e8;        /* Light blue accents */
+    --secondary-color: #f0f4f8;     /* Light background */
 }
 ```
 
-### Typography
+## 🎯 Key Skills Showcased
 
-Modify font families in `css/style.css`:
+**Architecture & Design**
+- Microservices & Distributed Systems
+- Event-Driven Architecture
+- High-Availability & Fault-Tolerant Systems
+- Cloud-Native AWS Deployments
 
-```css
-body {
-    font-family: /* Replace with your preferred font */
-}
-```
+**Technologies**
+- **Languages**: Java (JDK 8–21), SQL, Python, Shell Script
+- **Frameworks**: Spring Boot, Spring MVC, Spring Security, Hibernate, JPA
+- **Cloud**: AWS ECS, RDS, Lambda, Step Functions, API Gateway
+- **DevOps**: Docker, Jenkins, CI/CD Automation
+- **Databases**: PostgreSQL, Oracle, MS-SQL, NoSQL
 
-### Add More Sections
+**Professional Achievements**
+- 15+ Cloud-native Spring Boot microservices on AWS ECS
+- 1M+ insurance documents processed per month
+- 99.9% system availability
+- 60% reduction in deployment time
+- 35% faster incident resolution
+- Performance optimization: 30-40% latency reduction
 
-Create new sections by:
-1. Adding HTML in `index.html`
-2. Adding corresponding CSS in `css/style.css`
-3. Following the existing class naming pattern
+## 📊 Timeline Sections
 
-### Smooth Scrolling
+**Current Role: Java Technical Lead** (Oct 2021 – Present)
+- AVIVA CANADA INC - TCS CONTRACT, Toronto, ON
+- Architecting document orchestration platform
+- Leading team of 6-8 engineers
+- Managing AWS infrastructure at scale
 
-Already enabled in CSS. Navigation links automatically scroll smoothly to sections.
+**Previous Role: Java Developer** (May 2015 – Oct 2021)
+- TATA CONSULTANCY SERVICES, Bangalore, India
+- Legacy system modernization
+- Enterprise integration development
 
-## Best Practices
+## 🎓 Education & Credentials
 
-- **Keep it Simple**: Don't overcomplicate - simple is more professional
-- **Update Content**: Keep your projects and skills current
-- **Responsive**: Test on mobile devices regularly
-- **Performance**: Keep image file sizes optimized
-- **Accessibility**: Use semantic HTML and proper alt text for images
+**Education**
+- Bachelor of Technology in Electrical and Electronics
+- SASTRA University, India (2015)
 
-## SEO Tips
+**Certifications**
+- Oracle Certified Professional, Java SE 11 Developer
+- Guidewire Certified ClaimCenter Configuration Developer (Hakuba)
 
-1. Update the `<title>` tag with your name
-2. Add your name and keywords throughout the content
-3. Use proper heading hierarchy (h1, h2, h3)
-4. Optimize image alt text
-5. Keep structure clean and semantic
+## 📱 Responsive Breakpoints
 
-## Browser Support
+- **Desktop**: 1200px+ - Full layout with all features
+- **Tablet**: 768px - Optimized grid, adjusted spacing
+- **Mobile**: 480px - Single column, touch-friendly buttons
+
+## 🔧 Browser Support
 
 - Chrome (latest)
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-- Mobile browsers
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
-## Performance Tips
+## 💡 Best Practices Implemented
 
-1. **Optimize Images**: Compress images before adding to `assets/images/`
-   - Use tools like TinyPNG or ImageOptim
-   - Keep images under 100KB each
+- ✅ Semantic HTML5 structure
+- ✅ Mobile-first responsive design
+- ✅ CSS custom properties for easy theming
+- ✅ Smooth scrolling navigation
+- ✅ Accessibility considerations
+- ✅ Performance optimized
+- ✅ SEO-friendly meta tags
 
-2. **Lazy Loading**: Browser automatically lazy loads images
+## 📞 Contact
 
-3. **Caching**: GitHub Pages handles caching automatically
+- **Email**: kedar93@gmail.com
+- **Phone**: +1-647-831-8338
+- **Location**: Toronto, ON, Canada
+- **LinkedIn**: linkedin.com/in/kedareswar
+- **GitHub**: github.com/kedareswar
 
-## Troubleshooting
+## 📜 License
 
-**Images not showing?**
-- Check file paths are correct
-- Ensure images are in `assets/images/` folder
-- Verify file names match in `index.html`
-
-**Styles not applying?**
-- Clear browser cache (Ctrl+Shift+R or Cmd+Shift+R)
-- Check CSS file path in `index.html`
-- Verify CSS file is in `css/` folder
-
-**GitHub Pages not updating?**
-- Wait 5-10 minutes for changes to deploy
-- Check your repository settings under "Pages"
-- Verify branch is set to `main`
-
-## Resources
-
-- [GitHub Pages Documentation](https://docs.github.com/en/pages)
-- [HTML/CSS Tutorial](https://www.w3schools.com/)
-- [Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)
-
-## License
-
-This project is open source and available under the MIT License.
-
-## Support
-
-For issues or questions, feel free to open an issue in your repository or reach out directly.
+Open source and available under the MIT License.
 
 ---
 
-**Ready to deploy?** Update your information and push to GitHub!
+**Ready to deploy?** Push to GitHub and enable GitHub Pages in your repository settings!
+
 
